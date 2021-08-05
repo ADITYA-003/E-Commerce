@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<title>TYPES_OF_GROCERIES</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>  
+div{
+  background-color: grey;
+}
+  h2{
+  margin: 10px;
+}
+  .text-but{
+    border-radius: 5px;
+    margin: 10px;
+  }
+  .text-but:hover{
+    box-shadow: 2px 4px 2px cyan;
+  }
+  h1{
+    text-shadow: 2px 2px red;
+  }
+</style>
+<body>
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="PROJECT_!-GROCERY.html" class="w3-bar-item w3-button">Home</a>
+  <a href="Soft_Drink-main.html" target="frame 1"class="w3-bar-item w3-button">Soft Drink</a>
+  <a href="!breakfast!&cereals.html" target="frame 1" class="w3-bar-item w3-button">Cereals</a>
+  <a href="!snacks!&candies.html" target="frame 1"class="w3-bar-item w3-button">Candies</a>
+</div>
+
+<!-- Page Content -->
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+  <div class="w3-container">
+    <h1>Grocery Items</h1>
+    <img src="img/shop-cart.png"   style="width: 60px;
+    height: 60px;
+    float: right;
+    margin: -100px 193px;">
+    <img src="img/lgo.png"   style="  width: 160px;
+    height: 161px;
+    float: right;
+    margin: -143px 1px;">
+  </div>
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+    <iframe class="i"  scrolling="no" width="1500px" height="1900px"name="frame 1"></iframe>
+    <div><h2>Have a question?</h2>
+     <input class="text-but"type="search" size="40px"placeholder="Type your question or keyword">
+    </div> </body>
+</html>
